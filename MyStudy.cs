@@ -86,6 +86,23 @@ namespace IteratorMS01
         }
     }
 
+    public class LibraryNullIterator : IBookIterator
+    {
+        public bool IsDone => true;
+
+        public Book CurrentItem => null;
+
+        public Book First()
+        {
+            return null;
+        }
+
+        public Book Next()
+        {
+            return null;
+        }
+    }
+
     public enum BookIteratorType
     {
         normal,
