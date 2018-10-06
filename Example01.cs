@@ -82,9 +82,9 @@ new Book {Name="Вишневый сад"}
         }
     }
 
-    class Program
+    class Program1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Library library = new Library();
             Reader reader = new Reader();
