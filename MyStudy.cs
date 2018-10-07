@@ -12,6 +12,11 @@ namespace IteratorMS01
         {
             Name = name;
         }
+
+        public void Print()
+        {
+            Console.WriteLine(Name);
+        }
     }
 
     // iterator
@@ -163,6 +168,7 @@ namespace IteratorMS01
             for (Book item = iterator.First(); !iterator.IsDone; item = iterator.Next())
             {
                 Console.WriteLine(iterator.CurrentItem.Name);
+                item.Print();
             }
         }
     }
